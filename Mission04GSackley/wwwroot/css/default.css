@@ -1,0 +1,28 @@
+﻿/*Here is the page where I do all of my own styling! It is pretty basic but there is some good changes in there*/
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+label{
+    font-size: 20px;
+    color: cornflowerblue;
+    width: 150px;
+}
+
+textarea{
+    font-size: 20px;
+}
+
+li {
+    color: cornflowerblue;
+    list-style-type: none;
+}
+p {
+    font-size: 20px;
+    color: cornflowerblue;
+}
+h1 {
+    color: cornflowerblue;
+}
+h2 {
+    color: cornflowerblue;
+}
