@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model GradeCalculatorModel;
+
+<!-- Here is where a User can put in their inputs for grades in the section, it is then sent to the JS page to be calculated -->
+<h2>Final Grade Calculator</h2>
+<form method="post">
+    <label>Assignments: </label>
+    <input id="assignments" asp-for="ass" /> <br />
+    <label>Quizzes: </label>
+    <input id="quizzes" asp-for="qui"/> <br />
+    <label>Projects: </label>
+    <input id="projects" asp-for="pro" /> <br />
+    <label>INTEX: </label>
+    <input id="intex" asp-for="inte"/> <br />
+    <label>Midterm Exam: </label>
+    <input id="midterm" asp-for="mid"/> <br />
+    <label>Final Exam: </label>
+    <input id="final" asp-for="fin"/> <br />
+    <br />
+    <p id="grade"></p>
+    <br />
+    <input id="calculate-button" type="submit" value="Calculate Final Grade" />
+
+    <div asp-validation-summary="All"></div>
+</form>
+
+<!-- importing all the different pages needed -->
+<script src="~/js/GradeCalculator.js"></script>
